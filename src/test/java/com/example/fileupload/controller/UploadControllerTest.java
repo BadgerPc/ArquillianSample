@@ -63,10 +63,10 @@ public class UploadControllerTest {
     	
     	System.out.println( "Testing ******** : " + contextPath+ "upload/sayhello");
     	
+    	System.out.println( "restTemplate ******** : " + restTemplate); // Prints null
+    	
     	String result = restTemplate.getForObject(contextPath + "upload/sayhello", String.class);
     	
     	System.out.println( "Test : " + result);
-
-        //assertNotNull("The returned result from REST service was null.", result);
     }
 }
